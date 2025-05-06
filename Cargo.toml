@@ -34,15 +34,15 @@ rmqtt-sys-topic = { path = "rmqtt-plugins/rmqtt-sys-topic" }
 rmqtt-session-storage = { path = "rmqtt-plugins/rmqtt-session-storage" }
 rmqtt-message-storage = { path = "rmqtt-plugins/rmqtt-message-storage" }
 rmqtt-topic-rewrite = { path = "rmqtt-plugins/rmqtt-topic-rewrite" }
-rmqtt-auto-subscription = { path = "rmqtt-plugins/rmqtt-auto-subscription"}
+rmqtt-auto-subscription = { path = "rmqtt-plugins/rmqtt-auto-subscription" }
 rmqtt-bridge-ingress-mqtt = { path = "rmqtt-plugins/rmqtt-bridge-ingress-mqtt" }
 rmqtt-bridge-egress-mqtt = { path = "rmqtt-plugins/rmqtt-bridge-egress-mqtt" }
 rmqtt-bridge-ingress-kafka = { path = "rmqtt-plugins/rmqtt-bridge-ingress-kafka" }
 rmqtt-bridge-egress-kafka = { path = "rmqtt-plugins/rmqtt-bridge-egress-kafka" }
-rmqtt-bridge-ingress-pulsar = { path = "rmqtt-plugins/rmqtt-bridge-ingress-pulsar"}
-rmqtt-bridge-egress-pulsar = { path = "rmqtt-plugins/rmqtt-bridge-egress-pulsar"}
-rmqtt-bridge-egress-nats = { path = "rmqtt-plugins/rmqtt-bridge-egress-nats"}
-rmqtt-bridge-egress-reductstore = { path = "rmqtt-plugins/rmqtt-bridge-egress-reductstore"}
+rmqtt-bridge-ingress-pulsar = { path = "rmqtt-plugins/rmqtt-bridge-ingress-pulsar" }
+rmqtt-bridge-egress-pulsar = { path = "rmqtt-plugins/rmqtt-bridge-egress-pulsar" }
+rmqtt-bridge-egress-nats = { path = "rmqtt-plugins/rmqtt-bridge-egress-nats" }
+rmqtt-bridge-egress-reductstore = { path = "rmqtt-plugins/rmqtt-bridge-egress-reductstore" }
 
 [workspace.package]
 version = "0.15.0-beta.6"
@@ -88,7 +88,7 @@ rmqtt-cluster-raft = "0.1"
 rmqtt-cluster-broadcast = "0.1"
 
 
-tokio = { version = "1.44",  default-features = false }
+tokio = { version = "1.44", default-features = false }
 reqwest = "0.12"
 futures = "0.3"
 serde = "1.0"
@@ -111,7 +111,7 @@ uuid = "=1.11.0"
 rand = "0.9.0"
 crossbeam = "0.8"
 governor = "0.10"
-config = { version = "0.15.8", default-features = false}
+config = { version = "0.15.8", default-features = false }
 log = "0.4"
 slog = "2.7"
 slog-term = "2.9"
@@ -126,7 +126,7 @@ itertools = "0.14"
 structopt = "0.3"
 tokio-tungstenite = "0.26"
 pin-project-lite = "0.2"
-bitflags = "=2.6.0"
+bitflags = "2.9.0"
 leaky-bucket = "=1.1.2"
 scc = "=2.3.1"
 get-size = "0.1"
