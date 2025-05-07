@@ -19,7 +19,20 @@ all-features = true
 [features]
 default = []
 debug = []
-full = ["metrics", "stats", "plugin", "grpc", "tls", "ws", "delayed", "retain", "msgstore", "shared-subscription", "auto-subscription", "limit-subscription"]
+full = [
+    "metrics",
+    "stats",
+    "plugin",
+    "grpc",
+    "tls",
+    "ws",
+    "delayed",
+    "retain",
+    "msgstore",
+    "shared-subscription",
+    "auto-subscription",
+    "limit-subscription",
+]
 metrics = ["rmqtt-macros/metrics"]
 stats = []
 plugin = ["rmqtt-macros/plugin"]
@@ -38,7 +51,12 @@ rmqtt-net.workspace = true
 rmqtt-codec.workspace = true
 rmqtt-macros = { workspace = true, optional = true }
 rmqtt-utils.workspace = true
-rust-box = { workspace = true, features = ["dequemap", "task-exec-queue", "task-exec-queue-rate"] }
+rust-box = { workspace = true, features = [
+    "dequemap",
+    "task-exec-queue",
+    "task-exec-queue-rate",
+    "priority",
+] }
 tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
 serde = { workspace = true, features = ["derive"] }
 serde_json.workspace = true
