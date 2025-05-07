@@ -51,11 +51,11 @@ rmqtt-net.workspace = true
 rmqtt-codec.workspace = true
 rmqtt-macros = { workspace = true, optional = true }
 rmqtt-utils.workspace = true
-rust-box = { workspace = true, features = [
+rust-box = { git = "https://github.com/wheregmis/rust-box.git", branch = "main", features = [
     "dequemap",
     "task-exec-queue",
     "task-exec-queue-rate",
-    "priority",
+    "mpsc-priority",
 ] }
 tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
 serde = { workspace = true, features = ["derive"] }
